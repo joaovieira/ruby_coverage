@@ -1,7 +1,7 @@
-require "ruby_complexity"
+require "ruby_coverage"
 require "rails"
 require "action_controller"
-module RubyComplexity
+module RubyCoverage
   class Engine < Rails::Engine
 
     # We can add all of the public assets from our engine and make them

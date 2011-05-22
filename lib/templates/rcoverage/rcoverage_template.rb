@@ -1,7 +1,7 @@
 require 'fileutils'
 require 'syntax/convertors/html'
 
-class RcomplexityTemplate < MetricFu::Template
+class RcoverageTemplate < MetricFu::Template
 
   def write
     # Getting rid of the crap before and after the project name from integrity

@@ -3,10 +3,10 @@
 require 'rake'
 require 'rake/rdoctask'
 
-desc 'Generate documentation for Ruby Complexity.'
+desc 'Generate documentation for Ruby Coverage.'
 Rake::RDocTask.new(:rdoc) do |rdoc|
   rdoc.rdoc_dir = 'rdoc'
-  rdoc.title = "Ruby Complexity #{VERSION}"
+  rdoc.title = "Ruby Coverage #{VERSION}"
   rdoc.options << '--line-numbers' << '--inline-source'
   rdoc.rdoc_files.include('README*')
   rdoc.rdoc_files.include('lib/**/*.rb')
@@ -16,7 +16,7 @@ end
 ##remove
 def gemspec
   @gemspec ||= begin
-    file = File.expand_path('../ruby_complexity.gemspec', __FILE__)
+    file = File.expand_path('../ruby_coverage.gemspec', __FILE__)
     eval(File.read(file), binding, file)
   end
 end
