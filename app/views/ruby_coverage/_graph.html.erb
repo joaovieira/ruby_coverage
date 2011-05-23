@@ -3,10 +3,7 @@
   <%= javascript_include_tag 'js-class', 'bluff-min', 'excanvas' %>
 <% end %>
 
-<div class="graph_results">
-  <h3><%= t('code coverage') %></h3>
-  <canvas id="<%= RubyCoverage::NAME %>"></canvas>
-  <script type="text/javascript">
-    <%= File.read(Dir[File.join(dir, RubyCoverage::ANALYSER.underscore, '*.js')].first).html_safe %>
-  </script>
-</div>
+<canvas id="<%= RubyCoverage::NAME %>"></canvas>
+<script type="text/javascript">
+  <%= File.read(Dir[File.join(dir, RubyCoverage::ANALYSER.underscore, '*.js')].first).html_safe %>
+</script>

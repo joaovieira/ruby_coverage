@@ -10,8 +10,7 @@ class MetricFu::RcovBluffGrapher
         g.tooltips = true;
         g.hide_title = 'true';
         g.data('rcov', [#{@rcov_percent.join(',')}]);
-        g.labels = #{@labels.to_json}
-        ;
+        g.labels = #{@labels.to_json};
         g.draw();
       EOS
       File.open(File.join(MetricFu.output_directory, 'rcov.js'), 'w') {|f| f << content }
