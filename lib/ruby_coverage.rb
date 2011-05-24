@@ -12,4 +12,5 @@ module RubyCoverage
   NAME = 'Code Coverage'
   PROGRAMMING_LANGUAGE = "Ruby"
   ANALYSER = self.name.split('::').first
+  OUTPUT_NAME = 'rcov'
 end

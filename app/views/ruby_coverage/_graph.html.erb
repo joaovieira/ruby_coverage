@@ -5,5 +5,5 @@
 
 <canvas id="<%= RubyCoverage::NAME %>"></canvas>
 <script type="text/javascript">
-  <%= File.read(Dir[File.join(dir, RubyCoverage::ANALYSER.underscore, '*.js')].first).html_safe %>
+  <%= File.read(Dir[File.join(dir, RubyCoverage::ANALYSER.underscore, "#{RubyCoverage::OUTPUT_NAME}.js")].first).html_safe %>
 </script>
